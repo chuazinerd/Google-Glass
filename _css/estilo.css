@@ -1,7 +1,11 @@
-/* formatação do <body. e <p> ------------------------------- */
+/* formatação do <body. e <p> --------------------------------- */
 
 @charset "UTF-8";
-
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web);
+@font-face {
+    font-family:'FonteLogo' ;
+    src: url("../_fonts/bubblegum-sans-regular.otf") ;
+}
 body {
     background-color: #dddddd;
     color:rgba(0,0,0,1);
@@ -27,21 +31,21 @@ header#cabecalho img#icone {
     top: 94px;
 }
 
-/* Aula 16 – Cabeçalho em CSS3 ---------------------------------*/
+/* Aula 16 – Cabeçalho em CSS3 + parâmetro de inserção de imagem com CSS */
 header#cabecalho {
     border-bottom: #606060 solid;
     height: 150px;
     background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px; 
 }
 header#cabecalho h1 {
-    font-family: Arial, sans-serif;
+    font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
     color: rgb(63, 65, 85);
     text-shadow: 1px 1px 1px rgba(0,0,0, .6);
     padding: 0px;
 }
 header#cabecalho h2 {
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #888888;
     font-size: 15pt;
     padding: 0px;
