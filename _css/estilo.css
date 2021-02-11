@@ -1,4 +1,4 @@
-/* formatação do <body. e <p> */
+/* formatação do <body. e <p> ------------------------------- */
 
 @charset "UTF-8";
 
@@ -7,32 +7,48 @@ body {
     color:rgba(0,0,0,1);
 }
 
- p {
-     text-align: justify;
-     text-indent: 50px;
- }
+div#interface {
+    width: 1480px;
+    background-color: #ffffff;
+    margin: 10px;
+    box-shadow:  0px 0px 30px black;
+    padding: 10px;
+}
 
- /* Formataçaõ de icones */
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
 
+/* Formataçaõ de icones --------------------------------------- */
 header#cabecalho img#icone {
     position: absolute;
-    left: 84%;
-    top: 50px;
+    left: 1350px;
+    top: 94px;
 }
 
+/* Aula 16 – Cabeçalho em CSS3 ---------------------------------*/
 header#cabecalho {
-
+    border-bottom: #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px; 
+}
+header#cabecalho h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: rgb(63, 65, 85);
+    text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+    padding: 0px;
+}
+header#cabecalho h2 {
+    font-family: Arial, sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: -10px;
 }
 
- div#interface {
-     width: 90%;
-     background-color: #ffffff;
-     margin: 10px auto 10px auto;
-     box-shadow:  0px 0px 30px black;
-     padding: 10px 10px 10px 10px;
- }
-
- /* formatação de imagens com legendas ^ */
+/* formatação de imagens com legendas ----------------------- */
 
 figure.foto-legenda {
     position: relative;
@@ -55,25 +71,21 @@ figure.foto-legenda figcaption {
     box-sizing: border-box;
     transition-duration: 2s;
 }
-
 figure.foto-legenda:hover figcaption {
     opacity: 5;
 }
 
-/* Formtação dos menus */
-
+/* Formatação dos menus ------------------------------------- */
 nav#menu {
     display: block;
 }
-
 nav#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top: -20px;
-    left: 300px;
+    top:  -20px;
+    left: 550px;
 }
-
 nav#menu li {
     display: inline-block ;
     background-color: #dddddd;
@@ -81,22 +93,17 @@ nav#menu li {
     margin: 4px;
     transition: background-color 3s;
 }
-
+/* formatação visual com hover das litas ordenadas */
 nav#menu li:hover{
     background-color: #606060 ;
 }
-
 nav#menu h1 {
     display: none;
 }
-
 nav#menu a {
     color: #000000;
     text-decoration: none;
 }
-
 nav#menu a:hover {
     color: #ffffff;
 }
-
-/*formatação visual com hover das litas ordenadas  */
