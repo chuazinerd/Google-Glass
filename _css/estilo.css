@@ -1,4 +1,4 @@
-/* formatação do <body. e <p> --------------------------------- */
+/* formatação do <body> <p> ... --------------------------------- */
 
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Titillium+Web);
@@ -110,4 +110,26 @@ nav#menu a {
 }
 nav#menu a:hover {
     color: #ffffff;
+}
+
+/* Como usar as tags SECTION, ASIDE e FOOTER. */
+section#corpo {
+    display: block;
+    width: 840px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 26px;
+}
+aside#lateral {
+    display: block;
+    width: 590px;
+    float: right;
+}
+footer#rodape {
+    display: block;
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
 }
