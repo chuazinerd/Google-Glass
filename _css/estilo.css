@@ -120,6 +120,19 @@ section#corpo {
     border-right: 1px solid #606060;
     padding-right: 26px;
 }
+/* Tabelas em html, usando <tr> e <td> */
+table#especificacoes {
+    border: 1px solid #606060;
+    border-spacing:0px ;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+table#especificacoes td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
 aside#lateral {
     display: block;
     width: 590px;
