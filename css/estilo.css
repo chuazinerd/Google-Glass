@@ -10,14 +10,21 @@ body {
     font-family: Arial , sans-serif;
     background-color: #dddddd;
     color:rgba(0,0,0,1);
+    background: url("../imagens/glass-fundo.jpg"); 
+    background-size: 150px;
+
 }
 
 div#interface {
-    width: 1480px;
+    width: 900px;
     background-color: #ffffff;
-    margin: 10px;
+    margin: 170px;
     box-shadow:  0px 0px 30px black;
-    padding: 10px;
+    padding: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
 }
 
 p {
@@ -35,13 +42,16 @@ a:hover {
 
 /* Formataçaõ de icones --------------------------------------- */
 header#cabecalho img#icone {
+    width: 200px;
     position: absolute;
-    left: 1350px;
-    top: 94px;
+    left: 1000px;
+    margin: 20px;
+    top: 242px;
 }
 
 /* Aula 16 – Cabeçalho em CSS3 + parâmetro de inserção de imagem com CSS */
 header#cabecalho {
+    width: 750px;
     border-bottom: #606060 solid;
     height: 150px;
     background: url("../imagens/glass-logo-peq.jpg") no-repeat 0px 90px; 
@@ -62,30 +72,8 @@ header#cabecalho h2 {
 }
 
 /* formatação de imagens com legendas ----------------------- */
-
-figure.foto-legenda {
-    position: relative;
-    border: 8px solid black;
-    box-shadow: 1px 1px 4px black;
-}
 figure.foto-legenda img {
-    width: 100%;
-    height: 100%;
-}
-figure.foto-legenda figcaption {
-    opacity: 0;
-    position: absolute;
-    top: 0px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding: 100; 
-    box-sizing: border-box;
-    transition-duration: 2s;
-}
-figure.foto-legenda:hover figcaption {
-    opacity: 5;
+   padding-left: 140px;
 }
 
 /* Formatação dos menus ------------------------------------- */
@@ -96,8 +84,8 @@ nav#menu ul {
     list-style: none;
     text-transform: uppercase;
     position: absolute;
-    top:  -20px;
-    left: 550px;
+    top:  20px;
+    left: 445px;
 }
 nav#menu li {
     display: inline-block ;
@@ -121,15 +109,7 @@ nav#menu a:hover {
     color: #ffffff;
 }
 
-/* Como usar as tags SECTION, ASIDE e FOOTER. */
-section#corpo {
-    display: block;
-    width: 840px;
-    float: left;
-    border-right: 1px solid #606060;
-    padding-right: 26px;
-}
-/*  */
+/* tag article, editando fontes com cores e posições */
 article#noticia-principal h2 {
 font-size: 20px;
 color: #606060;
@@ -137,6 +117,7 @@ background-color: #dddddd;
 padding: 5px 0px 5px 10px;
 margin: 10px;
 }
+
 header#cabecalho-artigo h1 {
     font-family: 'FonteLogo' , sans-serif;
     font-size: 20px;
@@ -160,8 +141,9 @@ header#cabecalho-artigo h3 {
 
 /* Tabelas em html, usando <tr> e <td> */
 table#especificacoes {
+    width: 500px;
     border: 1px solid #606060;
-    border-spacing:0px ;
+    border-spacing: 1px ;
     margin-left: auto;
     margin-right: auto;
     
@@ -196,35 +178,26 @@ table#especificacoes caption span {
     font-size: 10px;
     margin-top: 10px;   
 }
-aside#lateral {
-    display: block;
-    width: 590px;
-    float: right;
-    background-color: #dddddd;
-    padding: 10px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.5 );
-}
-
-aside#lateral h1 {
+h1#outrasnoticias {
     font-family: 'FonteLogo', sans-serif;
-    font-size: 20px;
-    color: #606060;
-    margin-top: 0px;
-}
-aside#lateral h2 {
-background: #606060;
-font-size: 20px;
-color: white;
-padding: 5px;
+    font-size: 25pt;
+    color: rgb(63, 65, 85);
+    text-shadow: 1px 1px 1px rgba(0,0,0, .6);
+    padding: 0px;
+    margin: 15px;
 }
 
-footer#rodape {
+footer.rodape {
     display: block;
     clear: both;
-    border-top: 1px solid #606060;
+    border-top: 2px solid #606060;
 }
-footer#rodape p {
+footer.rodape p {
     text-align: center;
+    margin-left: -80px;
+}
+footer.rodape a {
+    margin-left: 25px;
 }
 
 span.cortabgglass {
