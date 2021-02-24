@@ -12,7 +12,7 @@ body {
     color:rgba(0,0,0,1);
     background: url("../imagens/glass-fundo.jpg"); 
     background-size: 150px;
-
+    mask-border-repeat: ;
 }
 
 div#interface {
